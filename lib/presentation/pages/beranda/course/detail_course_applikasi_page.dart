@@ -1,4 +1,6 @@
 // ignore: file_names
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -66,7 +68,7 @@ class _DetailCourseApplikasiPageState extends State<DetailCourseApplikasiPage> {
                           'Good and true home workout for the desired fitness results. Good and true home workout for the desired fitness results. Good and true home workout for the desired fitness results. Good and true home workout for the desired fitness results. Good and true home workout for the desired fitness results',
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 100,
                   ),
                   RichText(
@@ -77,7 +79,7 @@ class _DetailCourseApplikasiPageState extends State<DetailCourseApplikasiPage> {
                           'do you understand and feel helped from the video above?',
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
                   Row(
