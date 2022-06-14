@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_sport_apps/presentation/pages/beranda/olahraga/volley/detail_volley_page.dart';
 
@@ -164,67 +166,63 @@ class _CoursePageState extends State<CoursePage> {
     }
 
     Widget videoTutorial() {
-      return Container(
-        child: Row(
-          children: [
-            Container(
-              child: Image.asset(
-                'assets/image_video_tutorial.png',
-                width: 170,
+      return Row(
+        children: [
+          Image.asset(
+            'assets/image_video_tutorial.png',
+            width: 170,
+          ),
+          const SizedBox(
+            width: 10,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'VOLLEY',
+                style: GoogleFonts.montserrat(
+                  color: const Color(0xff0076CB),
+                  fontWeight: FontWeight.w400,
+                  decoration: TextDecoration.underline,
+                ),
               ),
-            ),
-            SizedBox(
-              width: 10,
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'VOLLEY',
-                  style: GoogleFonts.montserrat(
-                    color: const Color(0xff0076CB),
-                    fontWeight: FontWeight.w400,
-                    decoration: TextDecoration.underline,
-                  ),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                GestureDetector(
-                  onTap: () {
-                    Get.to(const DetailCourseApplikasiPage());
-                  },
-                  child: Container(
-                    width: 120,
-                    height: 30,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(14),
-                        border: Border.all(
-                          color: const Color(0xff0076CB),
-                        )),
-                    child: Center(
-                      child: Text(
-                        'Start',
-                        style: GoogleFonts.montserrat(
-                          color: const Color(0xff0076CB),
-                        ),
+              const SizedBox(
+                height: 10,
+              ),
+              GestureDetector(
+                onTap: () {
+                  Get.to(const DetailCourseApplikasiPage());
+                },
+                child: Container(
+                  width: 120,
+                  height: 30,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(14),
+                      border: Border.all(
+                        color: const Color(0xff0076CB),
+                      )),
+                  child: Center(
+                    child: Text(
+                      'Start',
+                      style: GoogleFonts.montserrat(
+                        color: const Color(0xff0076CB),
                       ),
                     ),
                   ),
                 ),
-                const SizedBox(
-                  height: 10,
-                ),
-                RichText(
-                  text: TextSpan(
-                      text: 'Good and true\nhomeworkot\n',
-                      style: GoogleFonts.montserrat(
-                          color: Colors.blue, fontSize: 12)),
-                )
-              ],
-            )
-          ],
-        ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              RichText(
+                text: TextSpan(
+                    text: 'Good and true\nhomeworkot\n',
+                    style: GoogleFonts.montserrat(
+                        color: Colors.blue, fontSize: 12)),
+              )
+            ],
+          )
+        ],
       );
     }
 

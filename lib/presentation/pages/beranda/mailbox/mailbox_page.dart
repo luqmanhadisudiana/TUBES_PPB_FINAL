@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import, avoid_unnecessary_containers, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_sport_apps/presentation/pages/beranda/mailbox/evaluation_page.dart';
 import 'package:flutter_application_sport_apps/presentation/pages/beranda/olahraga/gym/gym_kategory_page.dart';

@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_sport_apps/cubit/auth_cubit.dart';
 import 'package:flutter_application_sport_apps/cubit/olahraga_cubit.dart';
